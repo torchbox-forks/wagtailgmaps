@@ -14,24 +14,26 @@ class MapFieldPanel(FieldPanel):
 
         super().__init__(field_name, *args, **kwargs)
 
-    def clone(self):
-        instance = super().clone()
-
-        instance.default_centre = self.default_centre
-        instance.zoom = self.zoom
-        instance.latlng = self.latlng
-
-        return instance
-
-    def classes(self):
-        classes = super().classes()
-        classes.append('wagtailgmap')
-        return classes
-
-    def widget_overrides(self):
-        map_input = MapInput(
+    def get_form_options(self):
+        options = super().get_form_options()
+        options["widgets"] = {self.field_name: MapInput(
             default_centre=self.default_centre,
             zoom=self.zoom,
             latlng=self.latlng,
-        )
-        return {self.field_name: map_input}
+        )}
+        return options
+
+    def clone_kwargs(self):
+        kwargs = super().clone_kwargs()
+        kwargs.update({
+            'centre': self.default_centre,
+            'zoom': self.zoom,
+            'latlng': self.latlng,
+        })
+        return kwargs
+
+    class BoundPanel(FieldPanel.BoundPanel):
+        def classes(self):
+            classes = super().classes()
+            classes.append('wagtailgmap')
+            return classes
