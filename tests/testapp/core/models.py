@@ -1,8 +1,8 @@
 from django.db import models
-from wagtail.admin.edit_handlers import MultiFieldPanel
+from wagtail.admin.panels import MultiFieldPanel
 from wagtail.core.models import Page
 
-from wagtailgmaps.edit_handlers import MapFieldPanel
+from wagtailgmaps.panels import MapFieldPanel
 
 
 

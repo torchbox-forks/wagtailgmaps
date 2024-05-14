@@ -40,8 +40,8 @@
     ```python
     # myapp/models.py
     from django.db import models
-    from wagtail.wagtailcore.models import Page
-    from wagtailgmaps.edit_handlers import MapFieldPanel
+    from wagtail.models import Page
+    from wagtailgmaps.panels import MapFieldPanel
 
     class MapPage(Page):
         # Wagtailgmaps expects a `CharField` (or any other field that renders as a text input)
