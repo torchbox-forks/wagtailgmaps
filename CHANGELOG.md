@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [2.0.0+tbx] - 2024-05-15
+
+- Updated to support Wagtail 5+, removed support for older versions of Wagtail
+
 ## [1.0.1] - 2018-06-25
 
 Thanks to @scisteffan for their contribution.
