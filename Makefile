@@ -14,7 +14,7 @@ start: ## Starts the development server.
 
 lint: ## Lint the project.
 	flake8 wagtailgmaps tests setup.py
-	isort --check-only --diff --recursive wagtailgmaps tests setup.py
+	isort --check-only --diff wagtailgmaps tests setup.py
 
 test: ## Test the project.
 	python ./runtests.py
