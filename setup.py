@@ -16,12 +16,11 @@ install_requires = []
 # Testing dependencies
 testing_extras = [
     # Required for running the tests
-    "tox~=4.26.0",
+    "tox~=4.32.0",
     # For coverage and PEP8 linting
-    "coverage>=4.1.0,<4.2",
-    "flake8>=3.2.0,<3.3",
-    "flake8-colors>=0.1.6,<1",
-    "isort==4.2.5",
+    "coverage>=7.12.0,<8.0",
+    "flake8>=7.3.0,<8.0",
+    "isort==7.0.0",
     # For test site
     "Django>=4.2",
     "wagtail>=7.0.0",
@@ -53,11 +52,11 @@ setup(
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
         "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: 3.14",
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     ],
