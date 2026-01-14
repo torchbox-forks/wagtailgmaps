@@ -18,10 +18,11 @@ testing_extras = [
     # Required for running the tests
     "tox~=4.26.0",
     # For coverage and PEP8 linting
-    "coverage>=4.1.0,<4.2",
-    "flake8>=3.2.0,<3.3",
-    "flake8-colors>=0.1.6,<1",
-    "isort==4.2.5",
+    "setuptools>=80.9.0",
+    "coverage>=7.3.0",
+    "flake8>=7.2.0",
+    "flake8-colors>=0.1.9",
+    "isort>=6.0.1",
     # For test site
     "Django>=4.2",
     "wagtail>=7.0.0",
