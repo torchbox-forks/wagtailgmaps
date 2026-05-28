@@ -16,15 +16,15 @@ install_requires = []
 # Testing dependencies
 testing_extras = [
     # Required for running the tests
-    "tox~=4.26.0",
+    "tox>=4.26",
     # For coverage and PEP8 linting
-    "coverage>=4.1.0,<4.2",
-    "flake8>=3.2.0,<3.3",
-    "flake8-colors>=0.1.6,<1",
-    "isort==4.2.5",
+    "coverage>=7.6",
+    "flake8>=7.1",
+    "flake8-colors>=0.1.9",
+    "isort>=5.13",
     # For test site
-    "Django>=4.2",
-    "wagtail>=7.0.0",
+    "Django>=5.2,<6.1",
+    "wagtail>=7.0,<7.5",
 ]
 
 # Documentation dependencies
