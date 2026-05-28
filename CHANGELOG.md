@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+-   Support for Python 3.14
+-   Support for Django 6.0
+-   Support for Wagtail 7.3 and Wagtail 7.4 LTS
+
+### Removed
+
+-   Support for Python 3.9 (out of the Wagtail support window for the new range)
+-   Support for Django 4.2 and 5.1 (no longer required by any Wagtail version in the supported range)
+-   `USE_L10N` from the test settings (removed in Django 5.0)
+
+### Changed
+
+-   Refreshed dev dependencies (`coverage`, `flake8`, `isort`, `tox`) and dropped pre-5 `isort` calling convention from `make lint`
+-   Updated tox env list and GitHub Actions matrix to cover Python 3.10–3.14, Django 5.2 / 6.0, and Wagtail 7.0 LTS / 7.3 / 7.4 LTS
+-   Added `Framework :: Django` / `Framework :: Wagtail` and `python_requires = ">=3.10"` metadata
+
 ## [2.0.1] - 2025-06-18
 
 ### Fixed

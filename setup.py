@@ -16,15 +16,15 @@ install_requires = []
 # Testing dependencies
 testing_extras = [
     # Required for running the tests
-    "tox~=4.26.0",
+    "tox>=4.26",
     # For coverage and PEP8 linting
-    "coverage>=4.1.0,<4.2",
-    "flake8>=3.2.0,<3.3",
-    "flake8-colors>=0.1.6,<1",
-    "isort==4.2.5",
+    "coverage>=7.6",
+    "flake8>=7.1",
+    "flake8-colors>=0.1.9",
+    "isort>=5.13",
     # For test site
-    "Django>=4.2",
-    "wagtail>=7.0.0",
+    "Django>=5.2,<6.1",
+    "wagtail>=7.0,<7.5",
 ]
 
 # Documentation dependencies
@@ -45,19 +45,24 @@ setup(
     project_urls={
         "Changelog": "https://github.com/springload/wagtailgmaps/blob/master/CHANGELOG.md",
     },
+    python_requires=">=3.10",
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Django",
+        "Framework :: Django :: 5.2",
+        "Framework :: Django :: 6.0",
+        "Framework :: Wagtail",
+        "Framework :: Wagtail :: 7",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
         "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: 3.14",
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     ],
